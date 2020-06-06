@@ -2,7 +2,8 @@ package com.example.demo;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.example.demo.vo.TestVo;
+
+import com.qiqi.gengqi.vo.TestVo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -19,9 +20,9 @@ public class DemoApplication {
 
     @RequestMapping(value = "/helloQueue",method = RequestMethod.GET)
     public String getStr(@RequestParam(required = false ,name = "param1") String param){
-        String res = param ==null?"":"frevd";
+        String res = param ==null?"":"ffff";
         TestVo testVo = new TestVo();
-        testVo.setDesc("ferfvfr");
+        testVo.setDesc("ddddd");
         return JSON.toJSONString(testVo);
     }
 }

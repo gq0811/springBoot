@@ -1,4 +1,4 @@
-package com.example.demo.vo;
+package com.qiqi.gengqi.vo;
 
 public class TestVo {
 
